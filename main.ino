@@ -68,5 +68,13 @@ void loop() {
 		fbMsgsCount--;
 	}
 
+	if(fbLikes>0 || fbMsgs>0) {
+		if(fbLikesCount==0 && fbMsgsCount==0) {
+			delay(5750);
+			fbLikesCount = fbLikes;
+			fbMsgsCount = fbMsgs;
+		}
+	}
+
 	delay(250);
 }
